@@ -44,6 +44,9 @@ public class BootstrapData implements CommandLineRunner {
 
         kevinSaved.getBooks().add(kevinBookSaved);
         rodrigoSaved.getBooks().add(rodrioBookSaved);
+        
+        kevinBookSaved.getAuthors().add(kevinSaved);
+        rodrigoBook.getAuthors().add(rodrigoSaved);
 
         authorRepository.save(kevinSaved);
         authorRepository.save(rodrigoSaved);
